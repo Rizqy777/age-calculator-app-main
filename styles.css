@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Light-grey);
+}
+
+main {
+  max-width: 700px;
+  width: 100%;
+  background-color: var(--White);
+  border-radius: 10px 10px 100px 10px;
+  padding: 50px;
+}
+
+form {
+  display: flex;
+  width: 80%;
+  height: 150px;
+}
+
+input {
+  width: 80%;
+  margin: 10px 20px 0px 0;
+  font-size: 2rem;
+  border-radius: 5px;
+  height: 50px;
+  display: block;
+  padding: 40px 20px;
+  cursor: pointer;
+  border: 1px solid var(--Light-grey);
+}
+
+input:focus {
+  background-color: none;
+  outline: none;
+  border: 2px solid var(--Purple);
+  caret-color: var(--Purple);
+}
+
+.span_day,
+.span_month,
+.span_year {
+  color: var(--Smokey-grey);
+  font-size: 0.7rem;
+}
+
+hr {
+  width: 100%;
+  border-color: hsla(0, 1%, 44%, 0.252);
+}
+.container_arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  background-color: var(--Purple);
+  border-radius: 100px;
+  width: 100px;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background-color: black;
+}
+
+.container_result {
+  display: flex;
+  flex-direction: column;
+}
+
+.class {
+  font-size: 4rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.result_years,
+.result_months,
+.result_days {
+  color: var(--Purple);
+}
+
+.error_day,
+.error_year,
+.error_month {
+  color: var(--Light-red);
+  font-size: 0.7rem;
+  font-weight: 400;
+  font-style: italic;
+  display: none;
+}
+
+.valid_day,
+.valid_month,
+.valid_year {
+  color: var(--Light-red);
+  font-size: 0.7rem;
+  font-weight: 400;
+  font-style: italic;
+  display: none;
+}
+.line_2 {
+  display: none;
+}
+@media (max-width: 700px) {
+  main {
+    max-width: 500px;
+    min-width: 300px;
+    margin: 50px;
+  }
+  .line_2 {
+    display: block;
+  }
+
+  input {
+    width: 90%;
+    font-size: 5vw;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .class {
+    font-size: 10vw;
+  }
+
+  .arrow {
+    width: 30%;
+    padding: 5%;
+  }
+}

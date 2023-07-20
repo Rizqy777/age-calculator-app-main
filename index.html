@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <div class="container_day">
+          <span class="span_day">Day</span>
+          <input
+            type="text"
+            name="DD"
+            placeholder="DD"
+            id=""
+            class="input_day"
+            autocomplete="off"
+          />
+          <span></span>
+          <span class="error_day">This field is requiried</span>
+          <span class="valid_day">Must be a valid day</span>
+        </div>
+
+        <div class="container_month">
+          <span class="span_month">Month</span>
+          <input
+            type="text"
+            name="MM"
+            placeholder="MM"
+            id=""
+            class="input_month"
+            autocomplete="off"
+          />
+          <span class="error_month">This field is requiried</span>
+          <span class="valid_month">Must be a valid Month</span>
+        </div>
+        <div class="container_year">
+          <span class="span_year">Year</span>
+          <input
+            type="text"
+            name="YYYY"
+            placeholder="YYYY"
+            id=""
+            class="input_year"
+            autocomplete="off"
+          />
+          <span class="error_year">This field is requiried</span>
+          <span class="valid_year">Must be a valid year</span>
+        </div>
+      </form>
+      <div class="container_arrow">
+        <hr />
+        <img src="assets/images/icon-arrow.svg" class="arrow" alt="" />
+        <hr class="line_2" />
+      </div>
+      <div class="container_result">
+        <span class="class"><span class="result_years"> --</span> years</span>
+        <span class="class"><span class="result_months"> --</span> months</span>
+        <span class="class"><span class="result_days"> --</span>days</span>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
